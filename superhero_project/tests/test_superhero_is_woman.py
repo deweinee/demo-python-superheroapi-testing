@@ -16,4 +16,3 @@ def test_superhero_is_woman(superhero_id):
     assert_that(superhero_woman_in_name['appearance']['gender'].lower(),
                 equal_to("female"),
                 reason=f'{superhero_woman_in_name["name"]} is in fact {superhero_woman_in_name["appearance"]["gender"]}')
-    return superhero_woman_in_name
