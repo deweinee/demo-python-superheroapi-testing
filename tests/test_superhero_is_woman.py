@@ -2,8 +2,8 @@ import allure
 import pytest
 from hamcrest import assert_that, equal_to
 
-from superhero_project.clients.api_client import ApiClient
-from superhero_project.helpers.base_helper import superhero_id_with_woman_in_name
+from clients.api_client import ApiClient
+from helpers.base_helper import superhero_id_with_woman_in_name
 
 
 @allure.title('Superhero with "woman" in name indeed has "gender": "female"')

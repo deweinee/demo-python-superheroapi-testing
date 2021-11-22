@@ -1,6 +1,6 @@
 import re
 
-from superhero_project.clients.http_client import HttpClient
+from clients.http_client import HttpClient
 
 
 def superhero_id_with_woman_in_name() -> list:

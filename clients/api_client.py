@@ -1,15 +1,16 @@
 import requests
 
-from superhero_project.settings import HEADERS, URL
+from settings import HEADERS, URL
 
 
-class HttpClient:
+class ApiClient:
 
-    def get_hero_list_page(self, path="/ids.html"):
+    def get_by_id(self, params, path="/api/336778981550281/{superheroId}"):
         """
 
-        Gets the page with a list of superheroes
+        Gets superhero info by superhero id
         """
+        path = path.format(**params)
         response = requests.get(
             url=f'{URL}{path}',
             headers=HEADERS,
