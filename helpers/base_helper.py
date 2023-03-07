@@ -1,3 +1,7 @@
+"""
+Helpers
+"""
+
 import re
 
 from clients.http_client import HttpClient
@@ -5,7 +9,6 @@ from clients.http_client import HttpClient
 
 def superhero_id_with_woman_in_name() -> list:
     """
-
     Gets a list of superheroes with "woman" in their names
     Output: list of ids
     """
