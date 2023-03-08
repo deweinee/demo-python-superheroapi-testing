@@ -20,6 +20,7 @@ class ApiClient:
         response = requests.get(
             url=f'{URL}{path}',
             headers=HEADERS,
+            timeout=3,
         )
         response.raise_for_status()
         return response
