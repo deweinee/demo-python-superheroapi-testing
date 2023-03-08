@@ -1,3 +1,7 @@
+"""
+Tests
+"""
+
 import allure
 import pytest
 from hamcrest import assert_that, equal_to
