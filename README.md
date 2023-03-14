@@ -3,6 +3,9 @@
 ### Technology stack
 **Python, PyTest, PyHamcrest, Requests, allure-pytest**
 
+### Run
+`pytest`
+
 ### Tests
 1. Superhero with "woman" in name indeed has "gender": "female"
    - Get page content https://www.superheroapi.com/ids.html
