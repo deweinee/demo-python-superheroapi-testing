@@ -25,3 +25,6 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py') --disable=R0903,C0116,R0801 --max-line-length=140
+    - name: Run pytest
+      run: |
+        python -m pytest
